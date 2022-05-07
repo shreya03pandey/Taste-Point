@@ -1,0 +1,208 @@
+/*css reset*/
+*{
+    margin:0px;
+    padding:0px;
+}
+:root
+{
+--navbar-height: 59px;
+}
+#navbar
+{
+    display:flex;
+    align-items: center;
+    position:sticky;
+    top:0px;
+}
+#navbar::before
+{
+    display: flex;
+    content:"";
+    position:absolute;
+    background-color:black;
+    height:100%;
+    width:100%;
+    Z-index:-1;
+    opacity:0.7;
+    top:0px;
+    left:0px;
+}
+ #logo
+{
+ margin: 10px 30px;
+} 
+#logo img{
+     border: 2px solid black;
+     margin:10px 30px;
+}
+/* #navbar
+{
+    position:relative;
+} */
+#navbar ul{
+
+    display:flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size:24px;
+}
+ #navbar ul li a{
+     color:rgb(30, 50, 233);
+     display:block; 
+    padding: 3px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+ }
+#navbar ul li a:hover{
+    color:red;
+    background-color: white;
+    /* display:block; 
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none; */
+}
+#home::before{
+    display: flex;
+    content:"";
+    position:absolute;
+    background:url('../img/bg.jpg') no-repeat center center/cover;
+    height:100%;
+    width:100%;
+    Z-index:-1;
+    opacity:0.7; 
+    top:0px;
+    left:0px;
+}  
+#home
+{
+    display:flex;
+    flex-direction:column;
+    padding:3px 200px;
+    justify-content: center;
+    align-items: center;
+    height:450px;
+}
+/* Utility classes */
+.h-primary
+{
+    text-align: center;
+    font-size:3.8rem;
+    padding:8px;
+    text-shadow: 3px 3px black;
+    
+}
+.h-secondary
+{
+    font-size:2.8rem;
+    padding:12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#home p{
+    color:black;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+}
+.btn
+{
+    padding: 6px 20px;
+    border:3px solid black;
+     background-color: lightcoral;
+     margin:17px;
+     font-size:1.5rem;
+     border-radius:10px;
+     cursor:pointer;
+}
+.center
+{
+    text-align:center;
+}
+#services
+{
+    margin:34px;
+    display:flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.box
+{
+    border: 2px solid brown;
+    padding:34px;
+    margin:2px 30px;
+    border-radius: 23px;
+    background-color:burlywood;
+}
+.box img
+{
+   height:160px;
+   margin:auto;
+   display:block;
+} 
+.box p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#clients
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#clients img{
+    height:150px;
+}
+#client-section::before{
+    content:"";
+    position: absolute;
+    background:url('../img/bg1.jpg');
+    width:100%;
+    height:52%;
+    opacity:0.6;
+    z-index: -1;
+}
+.client-item
+{
+padding:25px;
+}
+#contact
+{
+    position:relative;
+}
+#contact::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.7;
+    background:url('../img/contact.jpg') no-repeat center center/cover;
+}
+footer{
+    background: black;
+    color:white;
+    padding:9px 20px;
+}
+#contact-box
+{
+display:flex;
+justify-content:center;
+align-items: center;
+padding-bottom:34px;
+}
+#contact-box input,
+#contact-box textarea
+{
+    width:100%;
+    padding:0.5rem;
+    border-radius:10px;
+    font-size: 1.1rem;
+
+}
+#contact-box form{
+    width:40%;
+
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family:cursive;
+}
